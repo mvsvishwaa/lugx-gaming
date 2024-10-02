@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+@font-face {
+    font-family: popinsbold;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: popinslig;
+    src: url(./fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: popinsreg;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: popinsmed;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: volkbold;
+    src: url(./fonts/Volkhov-Bold.ttf);
+}
+@font-face {
+    font-family: volkreg;
+    src: url(./fonts/Volkhov-Regular.ttf);
+}
+@font-face {
+    font-family: circblack;
+    src: url(./fonts/CircularStd-Black.ttf);
+}
+@font-face {
+    font-family: circbook;
+    src: url(./fonts/CircularStd-Book.ttf);
+}
+@font-face {
+    font-family: circmed;
+    src: url(./fonts/CircularStd-Medium.ttf);
+}
+
+.outer-width{
+    background-color:rgba(7, 7, 239, 0.797);
+    margin:7px 7px 0 7px;
+    border-bottom-left-radius: 11em;
+    border-bottom-right-radius: 11em;
+    .width{
+        max-width: 1300px;
+        margin: 0 auto;
+        .top-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                margin-top: 3em;
+            }
+            .menu{
+                margin-top: 3em;
+                ul{
+                    display: flex;
+                    li{
+                        list-style-type: none;
+                        a{
+                            font-family: popinsreg;
+                            text-decoration: none;
+                            color: white;
+                            padding-left: 4em;
+                        }
+                    }
+                }
+            }
+        }
+        .intro{
+            display: flex;
+            margin-top: 7em;
+            .gaming-site{
+                position: relative;
+                margin-top: 3em;
+                color: white;
+                h1{
+                    font-family: 'popinslig';
+                    font-size: 1.5em;
+                    text-transform: capitalize;
+                }
+                h2{
+                    font-family: circblack;
+                    margin-top: 15px;
+                    font-size: 2.8em;
+                }
+                p{
+                    max-width: 79%;
+                    margin-top: 3em;
+                    font-family: 'popinslig';
+                }
+                .input{
+                    input{
+                        font-family: popinsmed;
+                        margin-top: 5em;
+                        width: 30em;
+                        border-radius: 40px;
+                        padding: 15px;
+                        border: 1px solid white;
+                    }
+                }
+                .but{
+                    position: absolute;
+                    top: 48%;
+                    left: 34%;
+                    button{
+                        background-color:#d52e65;
+                        padding: 15px;
+                        border-radius: 40px;
+                        border: 1px solid #d52e65;
+                        width: 9em;
+                        font-family: popinsmed;
+                        font-size: 1em;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .assasin{
+                position: relative;
+                .discount{
+                    position: absolute;
+                    right: 25px;
+                    top: 21px;
+                    h5{
+                        color: white;
+                        background: rgba(7, 7, 239, 0.797);
+                        border: 2px solid blue;
+                        padding: 7px 18px;
+                        border-radius: 19px;
+                        font-family: 'popinsbold';
+                        font-size: 1.2em;
+                    }
+                }
+                 .round{
+                    position: absolute;
+                    top: 26em;
+                    right: 22em;
+                    height: 7em;
+                    width: 7em;
+                    background-color: #ff0055;
+                    border-radius: 50%;
+                    padding-top: 31px;
+                    padding-left: 13px;
+                    span{
+                        color: white;
+                        font-family: popinsbold;
+                        font-size: 2em;
+                    }
+                 }
+                img{
+                    border-radius: 35px;    
+                    margin-bottom: 9em;      
+                }
+            }
+        }
+        .features{
+            display: flex;
+            .storage{
+                background-color: white;
+                margin-left: 2em;
+                width: 50%;
+                text-align: center;
+                border-radius: 24px;
+                box-shadow: 10px 5px black;
+                a{
+                    img{
+                        background-color:rgb(55, 0, 255) ;
+                        border: 2px solid blue;
+                        border-radius: 50%;
+                        padding:22px;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                    }
+                }
+                h5{
+                    margin-bottom: 2em;
+                    font-size: 1.2em;
+                    font-family: 'circblack';
+                }
+            }
+        }
+    }
+}
