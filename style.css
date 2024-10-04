@@ -1,190 +1,580 @@
-*{
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 @font-face {
-    font-family: popinsbold;
-    src: url(./fonts/Poppins-Bold.ttf);
+  font-family: popinsbold;
+  src: url(./fonts/Poppins-Bold.ttf);
 }
 @font-face {
-    font-family: popinslig;
-    src: url(./fonts/Poppins-Light.ttf);
+  font-family: popinslig;
+  src: url(./fonts/Poppins-Light.ttf);
 }
 @font-face {
-    font-family: popinsreg;
-    src: url(./fonts/Poppins-Regular.ttf);
+  font-family: popinsreg;
+  src: url(./fonts/Poppins-Regular.ttf);
 }
 @font-face {
-    font-family: popinsmed;
-    src: url(./fonts/Poppins-Medium.ttf);
+  font-family: popinsmed;
+  src: url(./fonts/Poppins-Medium.ttf);
 }
 @font-face {
-    font-family: volkbold;
-    src: url(./fonts/Volkhov-Bold.ttf);
+  font-family: volkbold;
+  src: url(./fonts/Volkhov-Bold.ttf);
 }
 @font-face {
-    font-family: volkreg;
-    src: url(./fonts/Volkhov-Regular.ttf);
+  font-family: volkreg;
+  src: url(./fonts/Volkhov-Regular.ttf);
 }
 @font-face {
-    font-family: circblack;
-    src: url(./fonts/CircularStd-Black.ttf);
+  font-family: circblack;
+  src: url(./fonts/CircularStd-Black.ttf);
 }
 @font-face {
-    font-family: circbook;
-    src: url(./fonts/CircularStd-Book.ttf);
+  font-family: circbook;
+  src: url(./fonts/CircularStd-Book.ttf);
 }
 @font-face {
-    font-family: circmed;
-    src: url(./fonts/CircularStd-Medium.ttf);
+  font-family: circmed;
+  src: url(./fonts/CircularStd-Medium.ttf);
 }
 
-.outer-width{
-    background-color:rgba(7, 7, 239, 0.797);
-    margin:7px 7px 0 7px;
-    border-bottom-left-radius: 11em;
-    border-bottom-right-radius: 11em;
-    .width{
-        max-width: 1300px;
-        margin: 0 auto;
-        .top-flex{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .logo{
-                margin-top: 3em;
+.outer-width {
+  background-color: rgba(7, 7, 239, 0.797);
+  margin: 7px 7px 0 7px;
+  border-bottom-left-radius: 11em;
+  border-bottom-right-radius: 11em;
+  .width {
+    max-width: 1300px;
+    margin: 0 auto;
+    .top-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        margin-top: 3em;
+      }
+      .menu {
+        margin-top: 3em;
+        ul {
+          display: flex;
+          gap: 1em;
+          li {
+            list-style-type: none;
+            padding: 5px;
+            border-radius: 35px;
+            &:hover{
+                background-color: #d52e65;
+                transform: scale(1.1);
+                transition: 0.5s ease-in-out;
             }
-            .menu{
-                margin-top: 3em;
-                ul{
-                    display: flex;
-                    li{
-                        list-style-type: none;
-                        a{
-                            font-family: popinsreg;
-                            text-decoration: none;
-                            color: white;
-                            padding-left: 4em;
-                        }
-                    }
-                }
+            a {
+              font-family: popinsreg;
+              text-decoration: none;
+              color: white;
+              padding: 15px;
+              /* margin-left: 4em; */
+            }
+          }
+        }
+      }
+    }
+    .intro {
+      display: flex;
+      margin-top: 7em;
+      .gaming-site {
+        position: relative;
+        margin-top: 3em;
+        color: white;
+        h1 {
+          font-family: "popinslig";
+          font-size: 1.5em;
+          text-transform: capitalize;
+        }
+        h2 {
+          font-family: circblack;
+          margin-top: 15px;
+          font-size: 2.8em;
+        }
+        p {
+          max-width: 79%;
+          margin-top: 3em;
+          font-family: "popinslig";
+        }
+        .input {
+          input {
+            font-family: popinsmed;
+            margin-top: 5em;
+            width: 30em;
+            border-radius: 40px;
+            padding: 15px;
+            border: 1px solid white;
+          }
+        }
+        .but {
+          position: absolute;
+          top: 48%;
+          left: 34%;
+          button {
+            background-color: #d52e65;
+            padding: 15px;
+            border-radius: 40px;
+            border: 1px solid #d52e65;
+            width: 9em;
+            font-family: popinsmed;
+            font-size: 1em;
+            a {
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
+      }
+      .assasin {
+        position: relative;
+        .discount {
+          position: absolute;
+          right: 25px;
+          top: 21px;
+          h5 {
+            color: white;
+            background: rgba(7, 7, 239, 0.797);
+            border: 2px solid blue;
+            padding: 7px 18px;
+            border-radius: 19px;
+            font-family: "popinsbold";
+            font-size: 1.2em;
+          }
+        }
+        .round {
+          position: absolute;
+          top: 26em;
+          right: 22em;
+          height: 7em;
+          width: 7em;
+          background-color: #ff0055;
+          border-radius: 50%;
+          padding-top: 31px;
+          padding-left: 13px;
+          span {
+            color: white;
+            font-family: popinsbold;
+            font-size: 2em;
+          }
+        }
+        img {
+          border-radius: 35px;
+          margin-bottom: 9em;
+        }
+      }
+    }
+    .features {
+      display: flex;
+      .storage {
+        background-color: white;
+        margin-left: 2em;
+        width: 50%;
+        text-align: center;
+        border-radius: 24px;
+        box-shadow: 5px 5px #0000002b;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.5s ease-in-out;
+            img{
+                background-color: #ff0055;
+                transform: scale(1.1);
+                transition: 0.5s ease-in-out;
             }
         }
-        .intro{
-            display: flex;
-            margin-top: 7em;
-            .gaming-site{
-                position: relative;
-                margin-top: 3em;
-                color: white;
-                h1{
-                    font-family: 'popinslig';
-                    font-size: 1.5em;
-                    text-transform: capitalize;
-                }
-                h2{
-                    font-family: circblack;
-                    margin-top: 15px;
-                    font-size: 2.8em;
-                }
-                p{
-                    max-width: 79%;
-                    margin-top: 3em;
-                    font-family: 'popinslig';
-                }
-                .input{
-                    input{
-                        font-family: popinsmed;
-                        margin-top: 5em;
-                        width: 30em;
-                        border-radius: 40px;
-                        padding: 15px;
-                        border: 1px solid white;
-                    }
-                }
-                .but{
-                    position: absolute;
-                    top: 48%;
-                    left: 34%;
-                    button{
-                        background-color:#d52e65;
-                        padding: 15px;
-                        border-radius: 40px;
-                        border: 1px solid #d52e65;
-                        width: 9em;
-                        font-family: popinsmed;
-                        font-size: 1em;
-                        a{
-                            text-decoration: none;
-                            color: white;
-                        }
-                    }
-                }
-            }
-            .assasin{
-                position: relative;
-                .discount{
-                    position: absolute;
-                    right: 25px;
-                    top: 21px;
-                    h5{
-                        color: white;
-                        background: rgba(7, 7, 239, 0.797);
-                        border: 2px solid blue;
-                        padding: 7px 18px;
-                        border-radius: 19px;
-                        font-family: 'popinsbold';
-                        font-size: 1.2em;
-                    }
-                }
-                 .round{
-                    position: absolute;
-                    top: 26em;
-                    right: 22em;
-                    height: 7em;
-                    width: 7em;
-                    background-color: #ff0055;
-                    border-radius: 50%;
-                    padding-top: 31px;
-                    padding-left: 13px;
-                    span{
-                        color: white;
-                        font-family: popinsbold;
-                        font-size: 2em;
-                    }
-                 }
-                img{
-                    border-radius: 35px;    
-                    margin-bottom: 9em;      
-                }
-            }
+        a {
+          img {
+            background-color: rgb(55, 0, 255);
+            border-radius: 50%;
+            padding: 22px;
+            margin-top: 1em;
+            margin-bottom: 1em;
+          }
         }
-        .features{
-            display: flex;
-            .storage{
-                background-color: white;
-                margin-left: 2em;
-                width: 50%;
-                text-align: center;
-                border-radius: 24px;
-                box-shadow: 10px 5px black;
+        h5 {
+          margin-bottom: 2em;
+          font-size: 1.2em;
+          font-family: "circblack";
+        }
+      }
+    }
+  }
+}
+.center-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  .trending-part {
+    margin-top: 6em;
+    h5 {
+      font-size: 1em;
+      font-family: "popinsmed";
+      text-transform: uppercase;
+      color: #ff0055;
+    }
+    h6 {
+      font-size: 2.5em;
+      font-family: "circblack";
+      margin-top: 14px;
+    }
+  }
+  .total-store {
+    margin-top: 6em;
+    a {
+      text-decoration: none;
+      border: 1px solid red;
+      background-color: #ff0055;
+      color: white;
+      padding: 13px 27px;
+      border-radius: 2em;
+      font-family: "popinsmed";
+    }
+  }
+}
+.trending-games {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 4em;
+  .action-games {
+    background-color: rgba(171, 176, 181, 0.289);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+        .flex-bag{
+            .action-flex{
+                h6{
+                    color: blue;
+                }
+            }
+            .bag-icon{
                 a{
-                    img{
-                        background-color:rgb(55, 0, 255) ;
-                        border: 2px solid blue;
-                        border-radius: 50%;
-                        padding:22px;
-                        margin-top: 1em;
-                        margin-bottom: 1em;
+                    i{
+                        background-color: blue;
                     }
-                }
-                h5{
-                    margin-bottom: 2em;
-                    font-size: 1.2em;
-                    font-family: 'circblack';
                 }
             }
         }
     }
+    img {
+      border-radius: 35px;
+    }
+    .flex-bag {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 1.5em;
+      .action-flex {
+        margin-bottom: 1.5em;
+        h5 {
+          font-size: 1em;
+          font-family: "popinslig";
+        }
+        h6 {
+          font-size: 1.1em;
+          font-family: "popinsreg";
+          padding-top: 3px;
+          text-transform: capitalize;
+        }
+      }
+      .bag-icon {
+        a {
+          i {
+            color: white;
+            color: white;
+            background-color: #ff0055;
+            padding: 10px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+.width-clr {
+  background-color: rgba(171, 176, 181, 0.289);
+  margin-top: 8em;
+  border-top-left-radius: 14em;
+  border-top-right-radius: 14em;
+  border-bottom-left-radius: 14em;
+  border-bottom-right-radius: 14em;
+  .top-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3em;
+    .top-games {
+      margin-top: 6em;
+      h5 {
+        font-size: 1em;
+        font-family: "popinsmed";
+        text-transform: uppercase;
+        color: #ff0055;
+      }
+      h6 {
+        font-size: 2.5em;
+        font-family: "circblack";
+        margin-top: 14px;
+      }
+    }
+    .total-store {
+      margin-top: 6em;
+      a {
+        text-decoration: none;
+        border: 1px solid red;
+        background-color: #ff0055;
+        color: white;
+        padding: 13px 27px;
+        border-radius: 2em;
+        font-family: "popinsmed";
+      }
+    }
+  }
+  .most-played {
+    display: flex;
+    justify-content: space-around;
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 1em;
+    .top-games {
+      background-color: white;
+      border-top-left-radius: 35px;
+      border-top-right-radius: 35px;
+      border-bottom-left-radius: 35px;
+      border-bottom-right-radius: 35px;
+      margin-bottom: 8em;
+      &:hover{
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+        .top-flex{
+            h6{
+                color: blue;
+            }
+        }
+        .atag{
+            background-color: blue;
+        }
+        }
+      img {
+        border-radius: 35px;
+      }
+      .atag {
+        margin-left: 3em;
+        margin-bottom: 3em;
+        text-decoration: none;
+        background-color: #ff0055;
+        color: white;
+        padding: 7px 13px;
+        border-radius: 2em;
+        font-family: "popinsmed";
+      }
+      .top-flex {
+        margin-bottom: 1.5em;
+        margin-top: 10px;
+        h5 {
+          font-size: 1em;
+          font-family: "popinslig";
+          text-align: center;
+        }
+        h6 {
+          font-size: 1.1em;
+          font-family: "popinsreg";
+          padding-top: 3px;
+          text-transform: capitalize;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.catagories {
+  margin-top: 7em;
+  margin-bottom: 3em;
+  h5 {
+    font-size: 1em;
+    font-family: "popinsmed";
+    text-transform: uppercase;
+    color: #ff0055;
+    text-align: center;
+  }
+  h6 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "circblack";
+    margin-top: 14px;
+  }
+}
+.catagories-games {
+  display: flex;
+  justify-content: space-around;
+  width: 93%;
+  margin: 0 auto;
+  .top-catagories {
+    background-color: rgba(7, 7, 239, 0.797);
+    border-radius: 32px;
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.5s ease-in-out;
+        }
+    h4 {
+      text-align: center;
+      font-family: "popinsbold";
+      color: white;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+    .top-img {
+      img {
+        border-radius: 32px;
+      }
+    }
+  }
+}
+.footer {
+  margin-top: 10em;
+  text-align: center;
+  position: relative;
+  .footer-img {
+    img {
+      width: 38%;
+      border-radius: 20px;
+    }
+  }
+  .footer-parent {
+    position: absolute;
+    top: 4em;
+    left: 6em;
+    width: 90%;
+    .footer-content {
+      border-radius: 20px;
+      margin: 3em;
+      padding: 5em;
+      width: 40%;
+      margin-left: 0;
+      background-color:rgb(241 241 241);
+
+      h4 {
+        font-family: "circmed";
+        font-weight: 600;
+        color: #d52e65;
+        text-transform: uppercase;
+        text-align: left;
+      }
+      h5 {
+        font-size: 2em;
+        font-family: "popinsmed";
+        margin-top: 10px;
+        max-width: 9em;
+        text-align: left;
+      }
+      h6 {
+        font-size: 1em;
+        font-family: "popinslig";
+        margin-top: 3.3em;
+        margin-bottom: 4em;
+        text-align: left;
+      }
+      a {
+        text-decoration: none;
+        border: 1px solid red;
+        background-color: #ff0055;
+        color: white;
+        padding: 13px 27px;
+        border-radius: 2em;
+        font-family: "popinsmed";
+        margin-top: 10px;
+        margin-right: 15em;
+      }
+    }
+  }
+  .footer-parent1{
+    position: absolute;
+    top: 8em;
+    left: 53em;
+    width: 40%;
+    .footer-content1 {
+        border-radius: 20px;
+        margin: 3em;
+        padding: 5em;
+        width: 90%;
+        margin-left: 0;
+        background-color:rgb(241 241 241);
+        position: relative;
+  
+        h4 {
+          font-family: "circmed";
+          font-weight: 600;
+          color: #d52e65;
+          text-transform: uppercase;
+          text-align: left;
+        }
+        h5 {
+          font-size: 2em;
+          font-family: "popinsmed";
+          margin-top: 10px;
+          max-width: 9em;
+          text-align: left;
+          max-width: 80%;
+          margin-bottom: 2em;
+        }
+        h6 {
+          font-size: 1em;
+          font-family: "popinslig";
+          margin-top: 3.3em;
+          margin-bottom: 4em;
+          text-align: left;
+        }
+        a {
+          text-decoration: none;
+          border: 1px solid red;
+          background-color: #ff0055;
+          color: white;
+          padding: 13px 27px;
+          border-radius: 2em;
+          font-family: "popinsmed";
+          margin-top: 10px;
+          padding: 11px 27px;
+          position: absolute;
+          top: 19.2em;
+          left: 20em;
+        }
+        input {
+          padding: 15px;
+          border-radius: 28px;
+          border: 1px solid white;
+          width: 80%;
+          margin-right: 7em;
+        }
+      }
+  }
+}
+.copyrights {
+  background-color: rgba(7, 7, 239, 0.797);
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-family: popinslig;
+  border-top-right-radius: 12em;
+  border-top-left-radius: 12em;
+  margin-top: 15em;
+  h3 {
+    padding-bottom: 8em;
+    padding-top: 2.5em;
+  }
 }
