@@ -582,6 +582,144 @@
   }
 }
 
+/* our shop */
+
+.shop{
+  text-align: center;
+  color: white;
+  margin-top: 7em;
+  font-family: popinsmed;
+  text-transform: uppercase;
+  h1{
+    margin-bottom: 13px;
+    font-size: 3em;
+  }
+  h2{
+    font-size: 13px;
+  }
+}
+.all-games{
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 6em;
+  margin-bottom: 5em;
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'popinsreg';
+    background-color: #97959571;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 23px;
+    margin-left: 1em;
+    &:hover {
+      background-color: #d52e65;
+      transform: scale(1.1);
+      transition: 0.5s ease-in-out;
+      color: white;
+    }
+  }
+}
+.page-num{
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 8em;
+  a{
+    text-decoration: none;
+    font-family: 'popinsmed';
+    background-color: #BDBDBD;
+    padding: 7px 14px;
+    border-radius: 45px;
+    color: black;
+    margin-left: 1em;
+    &:hover {
+      background-color: blue;
+      transform: scale(1.1);
+      transition: 0.5s ease-in-out;
+      color: white;
+    }
+  }
+}
+
+/* product-page */
+
+.width1{
+  width: 85%;
+  margin: 0 auto;
+}
+.buying-page{
+  display: flex;
+  margin-top: 5em;
+  .cart-page{
+    margin-left: 6em;
+    font-family: popinsreg;
+    h2{
+      font-family: popinsbold;
+      font-size: 2em;
+      margin-bottom: 15px;
+      margin-top: 1.5em;
+    }
+    h3{
+      color: blue;
+      margin-bottom: 3em;
+      strike{
+        color: black;
+      }
+    }
+    p{
+      margin-bottom: 3em;
+    }
+    .clr{
+      background-color: #d52e65;
+      color: white;
+      margin-left: 1em;
+      padding: 12px 10px;
+      text-transform: uppercase;
+      border-radius: 30px;
+      i{
+        margin-right: 8px;
+      }
+    }
+    span{
+      color: black;
+      background-color: rgba(128, 128, 128, 0.171);
+      padding: 9px 28px;
+      border-radius: 15px;
+    }
+    .genre{
+      margin-top: 4em;
+      text-transform: capitalize;
+      font-family: popinslig;
+      h4{
+        margin-bottom: 10px;
+      }
+      h5{
+        margin-bottom: 10px;
+        font-size: 1em;
+      }
+      h6{
+        margin-bottom: 10px;
+        font-size: 1em;
+      }
+    }
+  }
+}
+.reviews{
+  font-family: popinslig;
+  background-color: #bdbdbd40;
+  padding: 3em;
+  margin-top: 7em;
+  border-radius: 30px;
+  h4{
+    margin-bottom: 1em;
+  }
+  p{
+    margin-bottom: 1em;
+  }
+}
+
+
 .mobview{
   background-color:rgba(0, 0, 0, 0.403);
   width: 50%;
